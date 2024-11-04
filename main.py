@@ -21,3 +21,6 @@ def insert_db():
         logging.info(f'Inserted successfully!')
     except Exception as e:
         logging.error(f'{e}')
+
+if __name__ == "__main__":
+    insert_db()
