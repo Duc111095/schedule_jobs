@@ -12,6 +12,7 @@ def insert_db():
             datefmt="%Y-%m-%d %H:%M",
         )
         conn = connect.connect_db()
+        logging.info(f'Conneted to the database')
         cursor = conn.cursor()
         sql_query = """
             insert into notify_zullip(to_person, group_yn, status, datetime0, gc_td1)
