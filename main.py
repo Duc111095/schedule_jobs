@@ -6,6 +6,7 @@ def insert_db():
         logging.basicConfig(
             filename="app.log",
             encoding="utf-8",
+            level=logging.INFO,
             filemode="a",
             format="{asctime} : {name} - {levelname} - {message}",
             style="{",
