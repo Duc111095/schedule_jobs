@@ -16,7 +16,7 @@ def insert_db():
         cursor = conn.cursor()
         sql_query = """
             insert into notify_zulip(to_person, group_yn, status, datetime0, gc_td1)
-            select 64, 0, 0, getdate(), 'SET NOCOUNT ON\n
+            select 1974, 1, 0, getdate(), 'SET NOCOUNT ON\n
             {CALL GETDL_TBMT_Zulip}'
         """
         cursor.execute(sql_query)
